@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
-                android:text="Apakah Planet merupakan Planet Luar?"
+                android:text="Apakah material penyusun berupa batuan?"
                 android:layout_margin="10dp"
                 android:textColor="#FFF"/>
            <Button
@@ -58,9 +58,10 @@
             android:id="@+id/btn_no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_1"
+            android:layout_below="@id/btn_yes"
             android:background="@drawable/bg_answer"
             android:layout_margin="10dp"
+            android:onClick="Pindah"
             android:text="Tidak"
             />
             
