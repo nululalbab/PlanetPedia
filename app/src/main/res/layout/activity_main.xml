@@ -46,22 +46,22 @@
                 android:layout_margin="10dp"
                 android:textColor="#FFF"/>
            <Button
-               android:id="@+id/btn_1"
+               android:id="@+id/btn_yes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/pertanyaan"
             android:background="@drawable/bg_answer"
             android:layout_margin="10dp"
-            android:text="Jawaban 1"
+            android:text="Ya"
             />
             <Button
-            android:id="@+id/btn_2"
+            android:id="@+id/btn_no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/btn_1"
             android:background="@drawable/bg_answer"
             android:layout_margin="10dp"
-            android:text="Jawaban 2"
+            android:text="Tidak"
             />
             
 
