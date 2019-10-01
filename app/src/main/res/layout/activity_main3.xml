@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
-                android:text="Apakah material penyusun berupa batuan?"
+                android:text="Apakah material penyusun berupa es?"
                 android:layout_margin="10dp"
                 android:textColor="#FFF"/>
            <Button

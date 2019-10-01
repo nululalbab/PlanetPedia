@@ -64,12 +64,7 @@
             android:onClick="Pindah"
             android:text="Tidak"
             />
-            
-
-
         </RelativeLayout>
-
-
 
 </RelativeLayout>
 
