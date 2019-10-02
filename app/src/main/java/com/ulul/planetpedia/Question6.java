@@ -45,11 +45,21 @@ public class Question6 extends AppCompatActivity {
             Intent intent = new Intent(Question6.this, Question12.class);
             intent.putExtra("rules",rules);
             startActivity(intent);
+        }else if(rules[6]&&!rules[8]){
+            rules[9]=true;
+            Intent intent = new Intent(Question6.this, Question10.class);
+            intent.putExtra("rules",rules);
+            startActivity(intent);
+        }
+        else if(rules[2]&&rules[7]){
+            rules[9]=true;
+            Intent intent = new Intent(Question6.this, Question14.class);
+            intent.putExtra("rules",rules);
+            startActivity(intent);
         }
         else {
             rules[9] = true;
-            rules[8]=false;
-            Intent intent = new Intent(Question6.this, Question6b.class);
+            Intent intent = new Intent(Question6.this, Question7.class);
             intent.putExtra("rules", rules);
             startActivity(intent);
         }

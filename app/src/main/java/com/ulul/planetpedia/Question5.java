@@ -27,7 +27,7 @@ public class Question5 extends AppCompatActivity {
     public void Ya(View view) {
         rules[6]=true;
         rules[7]=false;
-        Intent intent = new Intent(Question5.this, Question6.class);
+        Intent intent = new Intent(Question5.this, Question9.class);
         intent.putExtra("rules",rules);
         startActivity(intent);
     }

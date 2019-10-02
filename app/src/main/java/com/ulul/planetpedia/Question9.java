@@ -39,7 +39,7 @@ public class Question9 extends AppCompatActivity {
         }
     }
     public void Tidak(View view) {
-        Intent intent = new Intent(Question9.this, Question10.class);
+        Intent intent = new Intent(Question9.this, Question6.class);
         intent.putExtra("rules",rules);
         startActivity(intent);
     }
