@@ -41,7 +41,7 @@
             android:textColor="#ffff"
             android:textSize="17dp"/>
         <TextView
-            android:id="@+id/kholish"
+            android:id="@+id/kholis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/deliar"
@@ -52,7 +52,7 @@
             android:id="@+id/chrisna"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/kholish"
+            android:layout_below="@+id/kholis"
             android:text="Chrisna Haryo Wibisono"
             android:textColor="#ffff"
             android:textSize="17dp"/>
