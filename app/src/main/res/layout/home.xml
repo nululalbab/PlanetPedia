@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/logo"
             android:background="@drawable/bg_answer"
-            android:layout_margin="10dp"
+            android:layout_margin="11dp"
             android:onClick="Start"
             android:text="Mulai"
             />
