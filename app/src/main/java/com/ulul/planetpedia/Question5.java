@@ -27,9 +27,16 @@ public class Question5 extends AppCompatActivity {
     public void Ya(View view) {
         rules[6]=true;
         rules[7]=false;
-        Intent intent = new Intent(Question5.this, Question9.class);
-        intent.putExtra("rules",rules);
-        startActivity(intent);
+        if(rules[1]||rules[2]){
+            Intent intent = new Intent(Question5.this, Question9.class);
+            intent.putExtra("rules",rules);
+            startActivity(intent);
+        }
+        else{
+            Intent intent = new Intent(Question5.this, Question6.class);
+            intent.putExtra("rules",rules);
+            startActivity(intent);
+        }
     }
     public void Tidak(View view) {
         rules[7]=true;

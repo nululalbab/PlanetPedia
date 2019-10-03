@@ -33,13 +33,13 @@ public class Question8 extends AppCompatActivity {
             startActivity(intent);
         }
         else {
-            Intent intent = new Intent(Question8.this, Question10.class);
+            Intent intent = new Intent(Question8.this, Question14.class);
             intent.putExtra("rules", rules);
             startActivity(intent);
         }
     }
     public void Tidak(View view) {
-        Intent intent = new Intent(Question8.this, Question10.class);
+        Intent intent = new Intent(Question8.this, Question14.class);
         intent.putExtra("rules",rules);
         startActivity(intent);
     }

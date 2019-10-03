@@ -33,7 +33,7 @@ public class Question1 extends AppCompatActivity {
             rules[i]=false;
         }
         rules[1]=true;
-        Intent intent = new Intent(Question1.this, Question2.class);
+        Intent intent = new Intent(Question1.this, Question5.class);
         intent.putExtra("rules",rules);
         startActivity(intent);
     }

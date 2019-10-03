@@ -27,39 +27,37 @@ public class Question6 extends AppCompatActivity {
     }
     public void Ya(View view) {
         rules[8]=true;
-        Intent intent = new Intent(Question6.this, Question7.class);
-        intent.putExtra("rules",rules);
-        startActivity(intent);
+        if((rules[1]==true||rules[2]==true)&&rules[6]&&rules[8]) {
+            Intent intent = new Intent(Question6.this, Question7.class);
+            intent.putExtra("rules", rules);
+            startActivity(intent);
+        }
+        else{
+            Intent intent = new Intent(Question6.this, Question14.class);
+            intent.putExtra("rules", rules);
+            startActivity(intent);
+        }
     }
     public void Tidak(View view) {
-        if(rules[2]==false&&rules[4]==true){
-            rules[8]=false;
-            rules[9]=true;
+        rules[9]=true;
+        rules[8]=false;
+        if(rules[2]==false&&rules[4]==true&&rules[7]&&rules[9]){
             Intent intent = new Intent(Question6.this, Question11.class);
             intent.putExtra("rules",rules);
             startActivity(intent);
         }
-        else if(rules[2]==false&&rules[5]==true){
-            rules[9]=true;
-            rules[8]=false;
+        else if(rules[2]==false&&rules[5]==true&&rules[7]&&rules[9]){
             Intent intent = new Intent(Question6.this, Question12.class);
             intent.putExtra("rules",rules);
             startActivity(intent);
-        }else if(rules[6]&&!rules[8]){
-            rules[9]=true;
+        }
+        else if((rules[1]||rules[2])&&rules[6]&&rules[9]){
             Intent intent = new Intent(Question6.this, Question10.class);
             intent.putExtra("rules",rules);
             startActivity(intent);
         }
-        else if(rules[2]&&rules[7]){
-            rules[9]=true;
-            Intent intent = new Intent(Question6.this, Question14.class);
-            intent.putExtra("rules",rules);
-            startActivity(intent);
-        }
         else {
-            rules[9] = true;
-            Intent intent = new Intent(Question6.this, Question7.class);
+            Intent intent = new Intent(Question6.this, Question14.class);
             intent.putExtra("rules", rules);
             startActivity(intent);
         }

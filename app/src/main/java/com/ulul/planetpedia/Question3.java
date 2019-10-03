@@ -25,13 +25,15 @@ public class Question3 extends AppCompatActivity {
     }
     public void Ya(View view) {
         rules[4]=true;
+        rules[5]=false;
         Intent intent = new Intent(Question3.this, Question5.class);
         intent.putExtra("rules",rules);
         startActivity(intent);
     }
     public void Tidak(View view) {
         rules[4]=false;
-        Intent intent = new Intent(Question3.this, Question4.class);
+        rules[5]=true;
+        Intent intent = new Intent(Question3.this, Question5.class);
         intent.putExtra("rules",rules);
         startActivity(intent);
     }

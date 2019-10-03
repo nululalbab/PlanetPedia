@@ -33,6 +33,7 @@ public class Question16 extends AppCompatActivity {
             startActivity(intent);
         }
         else {
+            rules[18]=true;
             Intent intent = new Intent(Question16.this, Result.class);
             intent.putExtra("rules", rules);
             startActivity(intent);
